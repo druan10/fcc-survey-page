@@ -1,0 +1,55 @@
+.color-primary-0 { color: #759D34 }	/* Main Primary color */
+.color-primary-1 { color: #CEEC9D }
+.color-primary-2 { color: #9FC462 }
+.color-primary-3 { color: #507614 }
+.color-primary-4 { color: #314F00 }
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CEEC9D;
+}
+
+#content {
+    display:block;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#title-container {
+    text-align: center;
+}
+
+#survey-container {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(223, 245, 189);
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+#submit {
+    float: right;
+}
+
+.rowTab {
+    margin: 5px;
+}
+
+.left-tab {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.right-tab {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    vertical-align: middle;
+}

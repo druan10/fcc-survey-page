@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC - Survey Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="content">
+        <div id="title-container">
+            <h1 id="title">FCC Survey Page</h1>
+            <p id="description">Please take a moment to answer the survey below!</p>
+        </div>
+        <div id="survey-container">
+            <form id="survey-form" method="GET">
+                <!-- User email -->
+                <div class="rowTab">
+                    <div class="left-tab">
+                        <label for="user-name" id="name-label">Full name:</label>
+                    </div>
+                    <div class="right-tab">
+                        <input type="text" name="user-name" id="name" placeholder="Your name here!" required>
+                    </div>
+                </div>
+                <!-- User email -->
+                <div class="rowTab">
+                    <div class="left-tab">
+                        <label for="user-email" id="email-label">Email Address:</label>
+                    </div>
+                    <div class="right-tab">
+                        <input type="email" name="user-email" id="email" placeholder="user@email.com" required>
+                    </div>
+                </div>
+                <!-- User number -->
+                <div class="rowTab">
+                    <div class="left-tab">
+                        <label for="user-number" id="number-label">Please rate our courses - (0 = Lowest, 10 =
+                            Highest)</label>
+                    </div>
+                    <div class="right-tab">
+                        <input type="number" name="user-number" id="number" placeholder="Enter your rating" min="0"
+                            max="10">
+                    </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="rowTab">
+                    <div class="left-tab">
+                        <label for="user-skill" id="skill-level-label">Coding Skill Level:</label>
+                    </div>
+                    <div class="right-tab">
+                        <select name="user-skill-level" id="dropdown">
+                            <option value="novice">Absolute Beginner</option>
+                            <option value="intermediate">I've done some coding before</option>
+                            <option value="pro">I code professionally</option>
+                            <option value="l337">NCIS two people on one keyboard level hacker</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Dropdown -->
+                <div>
+                    <div class="left-tab">
+                        <label for="user-ide" id="ide-label">Which of these IDE's do you prefer?:</label>
+                    </div>
+                    <div class="right-tab">
+                        <div><input type="radio" name="ide" value="vsc"><label for="vsc-label" class="ide-label">Visual
+                                Studio Code</label></div>
+                        <div><input type="radio" name="ide" value="sublime"><label for="sublime-label"
+                                class="ide-label">Sublime</label></div>
+                        <div><input type="radio" name="ide" value="npp"><label for="npp-label"
+                                class="ide-label">Notepad++</label></div>
+                        <div><input type="radio" name="ide" value="other"><label for="other-ide-label"
+                                class="ide-label">Other</label></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="left-tab"></div>
+                    <div class="right-tab">
+                        <input type="checkbox" name="user-technologies" id="user-tech" value="webdev">Web
+                        Development<br>
+                        <input type="checkbox" name="user-technologies" id="user-tech" value="algorithms"> Algorithm
+                        Design & Analysis<br>
+                        <input type="checkbox" name="user-technologies" id="user-tech" value="datastructures">Data
+                        Structures<br>
+                        <input type="checkbox" name="user-technologies" id="user-tech" value="databases">Databases<br>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="left-tab">
+                        <label for="comments">Any additional comments or questions?:</label>
+                    </div>
+                    <div class="right-tab">
+                        <textarea name="comments" cols="30" rows="10" form="survey-form"
+                            placeholder="Enter any additional comments"></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
